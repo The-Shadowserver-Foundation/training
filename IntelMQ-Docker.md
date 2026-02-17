@@ -15,6 +15,8 @@ An API key is required and can be obtained by visiting https://www.shadowserver.
 | Login | `admin` |
 | Password | `secret` |
 
+## Fody
+
 | | |
 | --- | --- |
 | URL | http://{IP}:8001 |
