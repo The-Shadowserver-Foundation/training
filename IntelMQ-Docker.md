@@ -39,7 +39,7 @@ An API key is required and can be obtained by visiting https://www.shadowserver.
 
 > `docker run -p 8080:80 -p 5601:5601 -p 8001:8001 -it intelmq-demo /start`
 
-It will take a few minutes for all the services to start up and begin downloading data.
+It will take a few minutes for all the services to start up.
 
 
 # Process
