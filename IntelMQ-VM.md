@@ -7,7 +7,11 @@ This is the Readme page for the **intelmq-vm** image that is pre-configured for 
 
 An API key is required and can be obtained by visiting https://www.shadowserver.org/contact/ and selecting _Report API Key Request_ under *What is this about?*.
 
-This VM can be adapted to production use by removing the ShadowServerAPI-Collector `reports: test` setting and migrating the /opt/elasticsearch/data and /var/lib/postgresql directories to additional storage
+This VM can be adapted to production use by removing the ShadowServerAPI-Collector `reports: test` setting and migrating the /opt/elasticsearch/data and /var/lib/postgresql directories to additional storage.
+
+It is recommended to run this image in an isolated environment.
+
+The virtual machine is configured for DHCP.
 
  
 # Details
@@ -19,38 +23,16 @@ This VM can be adapted to production use by removing the ShadowServerAPI-Collect
 | Ubuntu | 24.04.3 LTS |
 | IntelMQ | 3.5.0 |
 
-## Ubuntu
+## Logins
 
-The virtual machine is configured for DHCP.
+The system will display a generated password on the console.
 
-| | |
-| --- | --- |
-| Login | `intelmq` |
-| Password | `secret` |
-
-## IntelMQ
-
-| | |
-| --- | --- |
-| URL | http://{IP}/intelmq-manager/ |
-| Login | `admin` |
-| Password | `secret` |
-
-## Fody
-
-| | |
-| --- | --- |
-| URL | http://{IP}:8001 |
-| Login | `fody` |
-| Password | `secret` |
-
-## Kibana
-
-| | |
-| --- | --- |
-| URL | http://{IP}:5601/ |
-| Login | `elastic` |
-| Password | `*hMDPI-BQ6r4vNR*f*lC` |
+| Service | URL | Login |
+| --- | --- | --- |
+| Console | | `intelmq`
+| IntelMQ | http://{IP}/intelmq-manager/ | `admin`
+| Fody | http://{IP}:8001/ | `fody`
+| Kibana | http://{IP}:5601/ | `admin`
 
 # Process
 

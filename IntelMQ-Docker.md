@@ -7,27 +7,14 @@ An API key is required and can be obtained by visiting https://www.shadowserver.
 
 # Details
 
-## IntelMQ
+The system will display a generated password on the console.
 
-| | |
-| --- | --- |
-| URL | http://{IP}:8080/intelmq-manager/ |
-| Login | `admin` |
-| Password | `secret` |
-
-| | |
-| --- | --- |
-| URL | http://{IP}:8001 |
-| Login | `fody` |
-| Password | `secret` |
-
-## Kibana
-
-| | |
-| --- | --- |
-| URL | http://{IP}:5601/ |
-| Login | `elastic` |
-| Password | `51g*bnP6mDclGvpuA_jv` |
+| Service | URL | Login |
+| --- | --- | --- |
+| Console | | `intelmq`
+| IntelMQ | http://{IP}/intelmq-manager/ | `admin`
+| Fody | http://{IP}:8001/ | `fody`
+| Kibana | http://{IP}:5601/ | `admin`
 
 # Install
 
@@ -37,7 +24,7 @@ An API key is required and can be obtained by visiting https://www.shadowserver.
 
 > `docker run -p 8080:80 -p 5601:5601 -p 8001:8001 -it intelmq-demo /start`
 
-It will take a few minutes for all the services to start up and begin downloading data.
+It will take a few minutes for all the services to start up.
 
 
 # Process
